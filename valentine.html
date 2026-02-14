@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta property="og:title" content="A Special Message for Safira 💖">
+    <meta property="og:description" content="Click to open your Valentine's surprise!">
+    <meta property="og:image" content="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDh6cGZoc200ZnFvbWhtaW95OGF2eTZncnJlbHQ3OTUycjR1MzgzdSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/dnEdk09qJftEJv8YMC/giphy.gif">
+    <title>Happy Valentine Sayanggg hehehhe! 💖</title>
+    <link href="https://fonts.googleapis.com/css2?family=Pacifico&family=Quicksand:wght@400;700&display=swap" rel="stylesheet">
+    <style>
+        :root {
+            --pastel-purple: #e0b0ff; 
+            --highlight-blue: #007bff; 
+            --text-color: #333;
+        }
+
+        body {
+            margin: 0;
+            padding: 10px; 
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            background: linear-gradient(135deg, var(--pastel-purple), #fbc2eb);
+            font-family: 'Quicksand', sans-serif;
+            color: var(--text-color);
+            text-align: center;
+            overflow: hidden; 
+            position: relative;
+        }
+
+        .heart-bg {
+            position: absolute;
+            bottom: -50px;
+            color: rgba(255, 105, 180, 0.4);
+            font-size: 20px;
+            user-select: none;
+            pointer-events: none;
+            animation: moveUp 6s linear infinite;
+            z-index: 0;
+        }
+
+        @keyframes moveUp {
+            0% { transform: translateY(0) rotate(0deg); opacity: 1; }
+            100% { transform: translateY(-110vh) rotate(360deg); opacity: 0; }
+        }
+
+        .container {
+            background: rgba(255, 255, 255, 0.85);
+            padding: 40px 30px; /* Padding lebih luas */
+            border-radius: 25px; /* Lebih bulat dan modern */
+            box-shadow: 0 15px 50px rgba(0, 0, 0, 0.1);
+            max-width: 500px; 
+            width: 90%; 
+            position: relative;
+            box-sizing: border-box;
+            z-index: 10;
+            transition: all 0.3s ease;
+        }
+
+        h1 {
+            font-family: 'Pacifico', cursive;
+            color: var(--highlight-blue);
+            font-size: 2.5em; 
+            margin-bottom: 25px;
+        }
+
+        .cat-gif {
+            width: 160px; 
+            height: auto;
+            margin-bottom: 20px;
+        }
+
+        p {
+            font-size: 1.1em; 
+            line-height: 1.6;
+            margin-bottom: 25px;
+        }
+
+        .button-group {
+            display: flex;
+            justify-content: center;
+            gap: 25px;
+            position: relative;
+            min-height: 70px;
+            margin-top: 10px;
+        }
+
+        #yesBtn {
+            background-color: var(--highlight-blue);
+            color: white;
+            border: none;
+            padding: 15px 35px;
+            border-radius: 40px;
+            font-size: 1.2em;
+            cursor: pointer;
+            transition: all 0.2s ease-in-out;
+            font-weight: bold;
+            z-index: 11;
+            box-shadow: 0 5px 15px rgba(255, 105, 180, 0.3);
+        }
+
+        #noBtn {
+            background-color: #f0f0f0;
+            color: var(--text-color);
+            border: 1px solid #ccc;
+            padding: 15px 35px;
+            border-radius: 40px;
+            font-size: 1.2em;
+            cursor: pointer;
+            position: absolute;
+            transition: all 0.3s ease-out;
+            font-weight: bold;
+        }
+
+        /* --- Success Message --- */
+        #successMessage h2 {
+            font-family: 'Pacifico', cursive;
+            color: var(--highlight-blue);
+            font-size: 1.8em;
+            margin-top: 10px;
+            line-height: 1.3;
+        }
+
+        #successMessage p {
+            font-family: 'Quicksand', sans-serif;
+            font-size: 0.95em; 
+            color: var(--text-color);
+            line-height: 1.5;
+            margin-top: 15px;
+            padding: 0 5px;
+        }
+
+        .couple-gif {
+            width: 180px; 
+            margin-top: 20px;
+            border-radius: 15px;
+        }
+
+        
+        @media (max-width: 480px) {
+            .container {
+                padding: 30px 20px; 
+                width: 95%; 
+            }
+            h1 { font-size: 2em; }
+            p { font-size: 1em; }
+            #yesBtn, #noBtn {
+                padding: 12px 25px;
+                font-size: 1.1em;
+            }
+            .cat-gif { width: 130px; }
+        }
+    </style>
+</head>
+<body>
+
+    <audio id="valentineMusic" loop>
+        <source src="Out Of My League - LANY.mp3" type="audio/mpeg">
+    </audio>
+
+    <div class="container">
+        <div id="proposalContent">
+            <h1>For Safira</h1>
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExbDh6cGZoc200ZnFvbWhtaW95OGF2eTZncnJlbHQ3OTUycjR1MzgzdSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/dnEdk09qJftEJv8YMC/giphy.gif" alt="Cute Cat" class="cat-gif">
+            <p>Sayangg, thank you selalu support aku, temenin aku, sayangin aku, and lastly thank you for being my best friend (girlfriend juga 🤭).</p>
+            <p>Can i be your Valentine?</p>
+
+            <div class="button-group">
+                <button id="yesBtn">Yes!</button>
+                <button id="noBtn">No</button>
+            </div>
+        </div>
+
+        <div id="successMessage" style="display: none;">
+            <h2>Happy Valentine Day Sayang 💜</h2>
+            <p>Safira, Happy Valentine's Day. So sad ga bisa nemenin kamu, peluk kamu, kiss km 😢. Maafin aku ya belum bisa nemenin kamu tahun ini. But i love you always. I'll always support you babyy. Love you to the moon and back 😘❤️.</p>
+            <img src="https://media.giphy.com/media/v1.Y2lkPTc5MGI3NjExYnFkbGdhZnByN2Zkb2E3azNkY3NrM2g4enNqaGttb3R3NmVjaXN1OSZlcD12MV9naWZzX3NlYXJjaCZjdD1n/1JmGiBtqTuehfYxuy9/giphy.gif" alt="Happy couple" class="couple-gif">
+        </div>
+    </div>
+
+    <script>
+        const yesBtn = document.getElementById('yesBtn');
+        const noBtn = document.getElementById('noBtn');
+        const proposalContent = document.getElementById('proposalContent');
+        const successMessage = document.getElementById('successMessage');
+        const music = document.getElementById('valentineMusic');
+
+        let yesButtonSize = 1;
+
+        function createHeart() {
+            const heart = document.createElement('div');
+            heart.classList.add('heart-bg');
+            
+            const emojis = ['❤️', '😘', '🥰', '😻', '💖', '✨'];
+            const randomEmoji = emojis[Math.floor(Math.random() * emojis.length)];
+            
+            heart.innerHTML = randomEmoji;
+            heart.style.left = Math.random() * 100 + "vw";
+            
+            const sizes = ['15px', '20px', '25px', '30px'];
+            heart.style.fontSize = sizes[Math.floor(Math.random() * sizes.length)];
+            
+            heart.style.animationDuration = Math.random() * 3 + 3 + "s";
+            document.body.appendChild(heart);
+            
+            setTimeout(() => { heart.remove(); }, 6000);
+        }
+        setInterval(createHeart, 400);
+
+        noBtn.addEventListener('mouseenter', () => {
+            if (window.innerWidth > 480) {
+                const containerRect = noBtn.parentElement.getBoundingClientRect();
+                const maxX = containerRect.width - noBtn.offsetWidth;
+                const maxY = containerRect.height - noBtn.offsetHeight;
+                const newX = Math.random() * maxX;
+                const newY = Math.random() * maxY;
+                noBtn.style.left = `${newX}px`;
+                noBtn.style.top = `${newY}px`;
+            }
+            yesButtonSize += 0.15;
+            yesBtn.style.transform = `scale(${yesButtonSize})`;
+        });
+
+        yesBtn.addEventListener('click', () => {
+            proposalContent.style.display = 'none';
+            successMessage.style.display = 'block';
+            music.currentTime = 41;
+            music.play(); 
+        });
+
+        window.addEventListener('load', () => {
+            noBtn.style.left = '60%';
+            noBtn.style.top = '10px';
+        });
+
+        if (window.innerWidth <= 480) {
+            noBtn.addEventListener('click', () => {
+                alert('Hehe, klik Yes aja ya! 😉');
+            });
+        }
+    </script>
+</body>
+</html>
